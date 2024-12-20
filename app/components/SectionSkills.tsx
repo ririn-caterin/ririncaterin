@@ -1,7 +1,6 @@
 import {
   FaReact,
   FaJs,
-  FaCss3Alt,
   FaGitAlt,
   FaWordpress,
   FaSearch,

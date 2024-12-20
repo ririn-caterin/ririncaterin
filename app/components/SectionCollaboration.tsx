@@ -5,7 +5,7 @@ const SectionColaboration = () => {
     <section className="bg-gray-100 py-14 md:py-24 text-center ">
       <div className="container mx-auto">
         <h2 className="text-2xl md:text-4xl font-semibold mb-4">
-          Looking for a Front-End Developer? Let's talk!
+          Looking for a Front-End Developer? Let&apos;s talk!
         </h2>
         <p className="md:text-lg mb-10">
           Transforming designs into functional, fast, and beautiful websites
