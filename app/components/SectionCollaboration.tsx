@@ -12,7 +12,7 @@ const SectionColaboration = () => {
           with clean code.
         </p>
         <Link
-          href="/contact"
+          href="https://api.whatsapp.com/send?phone=6281393893163"
           className="bg-customOrange font-medium px-10 py-4 rounded-full hover:bg-customOrange-dark transition duration-300"
         >
           Contact Me

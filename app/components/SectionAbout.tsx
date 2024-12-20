@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const SectionAbout = () => {
   return (
-    <section className="py-10 md:py-16 bg-customPurple">
-      <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
+    <section className="pt-10 bg-customPurple">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         {/* Kontainer teks */}
         <div className="w-full md:w-1/2 text-center md:text-left mt-6 md:mt-0">
           <h1 className="text-3xl md:text-5xl font-semibold mb-4 leading-snug md:leading-tight">
@@ -19,13 +19,13 @@ const SectionAbout = () => {
         </div>
 
         {/* Kontainer gambar */}
-        <div className="relative flex justify-center items-center my-5 md:my-8">
+        <div className="relative flex justify-center items-center">
           <Image
-            src="/images/ririn-caterin.jpg"
+            src="/images/ririn-caterin-web.webp"
             alt="Ririn Caterin"
-            className="rounded-br-[50px] rounded-tl-[50px] md:rounded-br-[100px] md:rounded-tl-[100px] profpic"
-            width={300}
+            width={400}
             height={300}
+            priority
           />
         </div>
       </div>

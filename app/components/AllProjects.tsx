@@ -376,43 +376,53 @@ const ProjectTable = () => {
   return (
     <div className="overflow-x-auto">
       <div className="overflow-x-auto">
-        <table className="table-auto border-collapse w-full text-left text-sm">
-          <thead>
-            <tr className="bg-customPurple">
-              <th className="px-6 py-3 md:px-6 md:py-3 font-semibold">Year</th>
-              <th className="px-6 py-3 md:px-6 md:py-3 font-semibold">
-                Project Name
-              </th>
-              <th className="px-6 py-3 md:px-6 md:py-3 font-semibold">Role</th>
-              <th className="px-6 py-3 md:px-6 md:py-3 font-semibold">
-                Description
-              </th>
-            </tr>
-          </thead>
-          <tbody>
+        <div className="w-full text-sm">
+          {/* Header */}
+          <div className="hidden md:flex px-6 py-3 font-medium border-y-2 border-customOrange">
+            <span className="w-[70px]">Year</span>
+            <span className="w-[240px] pr-5">Project Name</span>
+            <span className="w-1/6">Role</span>
+            <span className="w-3/6">Description</span>
+          </div>
+
+          {/* Data Rows */}
+          <div>
             {projects.map((project, index) => (
-              <tr
+              <div
                 key={index}
                 className={`${
-                  index % 2 === 0 ? "bg-white" : "bg-customYellow"
-                }`}
+                  index % 2 === 0 ? "bg-customYellow" : "bg-white"
+                } px-6 py-4`}
               >
-                <td className="px-4 py-2 md:px-6 md:py-3 font-medium whitespace-nowrap">
-                  {project.year}
-                </td>
-                <td className="px-4 py-2 md:px-6 md:py-3 whitespace-nowrap">
-                  {project.name}
-                </td>
-                <td className="px-4 py-2 md:px-6 md:py-3 whitespace-nowrap">
-                  {project.role}
-                </td>
-                <td className="px-4 py-2 md:px-6 md:py-3">
-                  {project.description}
-                </td>
-              </tr>
+                {/* Mobile View */}
+                <div className="block md:hidden">
+                  <div className="mb-2">
+                    <span className="font-medium">Year:</span> {project.year}
+                  </div>
+                  <div className="mb-2">
+                    <span className="font-medium">Project Name:</span>{" "}
+                    {project.name}
+                  </div>
+                  <div className="mb-2">
+                    <span className="font-medium">Role:</span> {project.role}
+                  </div>
+                  <div>
+                    <span className="font-medium">Description:</span>{" "}
+                    {project.description}
+                  </div>
+                </div>
+
+                {/* Desktop View */}
+                <div className="hidden md:flex">
+                  <div className="w-[70px]">{project.year}</div>
+                  <div className="w-[240px] pr-5">{project.name}</div>
+                  <div className="w-1/6">{project.role}</div>
+                  <div className="w-3/6">{project.description}</div>
+                </div>
+              </div>
             ))}
-          </tbody>
-        </table>
+          </div>
+        </div>
       </div>
     </div>
   );

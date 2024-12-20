@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import AllProjects from "../components/AllProjects";
 import Header from "../components/Header";
+
+export const metadata: Metadata = {
+  title: "Ririn Caterin | Front End Developer",
+  description:
+    "Front-End Developer specializing in modern, responsive web applications with expertise in Next.js, TypeScript, Tailwind CSS, and Material UI. Delivering intuitive, high-performing, and SEO-optimized user experiences.",
+  alternates: {
+    canonical: `https://ririncaterin.com/all-projects`,
+  },
+};
 
 const Page = () => {
   return (
