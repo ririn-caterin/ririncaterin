@@ -11,6 +11,18 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        customOrange: {
+          DEFAULT: "#ffc300",
+          dark: "#ffd71c",
+        },
+        customBlue: "#ebf9ff",
+        customYellow: "#fff6e7",
+        customPurple: "#eff0ff",
+        customPink: "#fef2ff",
+        customBlack: "#3a3a3a"
+      },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
       },
     },
   },
