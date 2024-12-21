@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import AllProjects from "../components/AllProjects";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
   title: "Ririn Caterin | Front End Developer",
@@ -28,6 +29,9 @@ const Page = () => {
           expertise and the impactful contributions I’ve made.
         </p>
         <AllProjects />
+      </div>
+      <div className="bg-gray-50">
+        <Footer />
       </div>
     </div>
   );
