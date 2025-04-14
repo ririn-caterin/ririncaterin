@@ -1,6 +1,34 @@
 const ProjectTable = () => {
   const projects = [
     {
+      year: "2025",
+      name: "Amanah Farm Website",
+      description:
+        "Developed the Amanah Farm website using WordPress page builder.",
+      role: "Front-End Developer",
+    },
+    {
+      year: "2025",
+      name: "Karyatama Bangun Sawit Website",
+      description:
+        "Developed the Karyatama Bangun Sawit website using WordPress page builder.",
+      role: "Front-End Developer",
+    },
+    {
+      year: "2025",
+      name: "Ksatria Baja Hitam Website",
+      description:
+        "Developed the Ksatria Baja Hitam website using WordPress page builder.",
+      role: "Front-End Developer",
+    },
+    {
+      year: "2025",
+      name: "MCI Carbon Website",
+      description:
+        "Developed the MCI Carbon website using WordPress page builder.",
+      role: "Front-End Developer",
+    },
+    {
       year: "2024",
       name: "Malika AI Website",
       role: "Front-End Developer",
@@ -205,28 +233,28 @@ const ProjectTable = () => {
       name: "The Real Ummi Website",
       role: "Wordpress Developer",
       description:
-        "Build and maintain mom’s lifestyle website using Wordpress.",
+        "Build and maintain mom's lifestyle website using Wordpress.",
     },
     {
       year: "2016",
       name: "LDN ERNST Website",
       role: "Wordpress Developer",
       description:
-        "Build website for a lawyer company and create the user’s manual.",
+        "Build website for a lawyer company and create the user's manual.",
     },
     {
       year: "2016",
       name: "Beamer Multimedia Website",
       role: "Wordpress Developer",
       description:
-        "Build website for a multimedia service company and create the user’s manual.",
+        "Build website for a multimedia service company and create the user's manual.",
     },
     {
       year: "2016",
       name: "Dinas Pendidikan Kabupaten Barru Website",
       role: "Wordpress Developer",
       description:
-        "Build website Education Departement of Barru District and create the user’s manual.",
+        "Build website Education Departement of Barru District and create the user's manual.",
     },
     {
       year: "2016",
@@ -247,21 +275,21 @@ const ProjectTable = () => {
       name: "RSUD Kabupaten Barru Website",
       role: "Wordpress Developer",
       description:
-        "Build website Hospital of Barru District and create the user’s manual.",
+        "Build website Hospital of Barru District and create the user's manual.",
     },
     {
       year: "2016",
       name: "SMKN 1 Bawen Website",
       role: "Wordpress Developer",
       description:
-        "Build website State Vocation High School 1 Bawen and create the user’s manual.",
+        "Build website State Vocation High School 1 Bawen and create the user's manual.",
     },
     {
       year: "2016",
       name: "PPID Kab. Barru Website",
       role: "Wordpress Developer",
       description:
-        "Build local government profile and create the user’s manual.",
+        "Build local government profile and create the user's manual.",
     },
     {
       year: "2016",
@@ -278,7 +306,7 @@ const ProjectTable = () => {
     },
     {
       year: "2016",
-      name: "“SIMASTER” Web Application",
+      name: "SIMASTER Web Application",
       role: "Front-end Developer",
       description: "Create HTML pages for Web Application Simaster",
     },
@@ -287,14 +315,14 @@ const ProjectTable = () => {
       name: "JAPSI UNDIP Websitte",
       role: "Wordpress Developer",
       description:
-        "Build website JAPSI at the University of Diponegoro. and create the user’s manual",
+        "Build website JAPSI at the University of Diponegoro. and create the user's manual",
     },
     {
       year: "2016",
       name: "Psikologi UNDIP Website",
       role: "Wordpress Developer",
       description:
-        "Build website Faculty of Psychology at the University of Diponegoro. and create the user’s manual",
+        "Build website Faculty of Psychology at the University of Diponegoro. and create the user's manual",
     },
     {
       year: "2016",
@@ -308,18 +336,18 @@ const ProjectTable = () => {
       name: "CV. Bintang Sentosa Sejahtera Website",
       role: "WordPress Developer",
       description:
-        "Build company profile website for a commercial and service company, and create the user’s manual.",
+        "Build company profile website for a commercial and service company, and create the user's manual.",
     },
     {
       year: "2016",
       name: "Balubaid Ikhwan Website",
       role: "WordPress Developer",
       description:
-        "Build company profile website for a company that organize The Hajj and Umrah pilgrimage, and create the user’s manual.",
+        "Build company profile website for a company that organize The Hajj and Umrah pilgrimage, and create the user's manual.",
     },
     {
       year: "2016",
-      name: "“AbsenKU” Website",
+      name: "AbsenKU Website",
       role: "Front-end Developer",
       description:
         "Build one page web application of information system for tracking employee attendance",
@@ -333,13 +361,13 @@ const ProjectTable = () => {
     },
     {
       year: "2016",
-      name: "“AbsenKU Karyawan” Web Application",
+      name: "AbsenKU Karyawan Web Application",
       role: "Front-end Developer",
       description: "Create HTML pages for web application AbsenKU Karyawan",
     },
     {
       year: "2015",
-      name: "Web Application of FH UNDIP ’96",
+      name: "Web Application of FH UNDIP '96",
       role: "Front-end Developer",
       description:
         "Create HTML pages for web application of Diponegoro University Graduation for Law Faculty",
@@ -349,14 +377,14 @@ const ProjectTable = () => {
       name: "Karya Zirang Website",
       role: "WordPress Developer",
       description:
-        "Build company profile website for Zirang Business Group and create the user’s manual.",
+        "Build company profile website for Zirang Business Group and create the user's manual.",
     },
     {
       year: "2015",
       name: "GINSI Jateng Website",
       role: "WordPress Developer",
       description:
-        "Build company profile website for an importer company and create the user’s manual.",
+        "Build company profile website for an importer company and create the user's manual.",
     },
     {
       year: "2015",
@@ -369,9 +397,9 @@ const ProjectTable = () => {
       name: "BPR Weleri Makmur Website",
       role: "WordPress Developer",
       description:
-        "Build company profile website for a bank and create the user’s manual.",
+        "Build company profile website for a bank and create the user's manual.",
     },
-  ];
+  ] as const;
 
   return (
     <div className="overflow-x-auto">
