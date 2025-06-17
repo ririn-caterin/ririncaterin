@@ -2,6 +2,20 @@ const ProjectTable = () => {
   const projects = [
     {
       year: "2025",
+      name: "MentorQu Website",
+      description:
+        "Developed the MentorQu website using WordPress page builder.",
+      role: "Front-End Developer",
+    },
+    {
+      year: "2025",
+      name: "Karyatana Komposit Website",
+      description:
+        "Developed the Karyatama Komposit website using WordPress page builder.",
+      role: "Front-End Developer",
+    },
+    {
+      year: "2025",
       name: "Amanah Farm Website",
       description:
         "Developed the Amanah Farm website using WordPress page builder.",
