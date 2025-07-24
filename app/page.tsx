@@ -9,7 +9,7 @@ import SectionSkills from "./components/SectionSkills";
 export const metadata: Metadata = {
   title: "Ririn Caterin | Front End Developer",
   description:
-    "Front-End Developer with hands-on experience building and customizing WordPress and WooCommerce websites. I focus on layout styling, theme customization, and ensuring a smooth user experience across devices. I enjoy solving front-end issues and making sure everything looks clean and works as expected.",
+    "WordPress and WooCommerce front-end developer focused on layout, styling, and usability.",
   alternates: {
     canonical: `https://ririncaterin.com/`,
   },

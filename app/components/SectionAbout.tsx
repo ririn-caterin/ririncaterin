@@ -10,11 +10,11 @@ const SectionAbout = () => {
             Hi, I’m Ririn Caterin.
           </h1>
           <p className="text-sm md:text-base leading-6 md:leading-7 mb-6">
-            Front-End Developer specializing in building modern, responsive, and
-            user-friendly web applications. With expertise in Next.js,
-            TypeScript, Tailwind CSS, and Material UI, I combine front-end
-            development with SEO optimization to deliver intuitive,
-            high-performing, and search engine-friendly experiences.
+            Front-End Developer with hands-on experience building and
+            customizing WordPress and WooCommerce websites. I focus on layout
+            styling, theme customization, and ensuring a smooth user experience
+            across devices. I enjoy solving front-end issues and making sure
+            everything looks clean and works as expected.
           </p>
         </div>
 
