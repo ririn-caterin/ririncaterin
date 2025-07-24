@@ -2,46 +2,58 @@ import Link from "next/link";
 
 const projects = [
   {
-    title: "E-Commerce Pet Store",
-    year: "2024",
+    title: "MCI Carbon Website",
+    year: "2025",
+    link: "https://mcicarbon.co.id/",
+    displayLink: "mcicarbon.co.id",
     description:
-      "Developed a pet store platform using Next.js, TypeScript, Tailwind CSS, and Supabase. Implemented authentication, product search, reviews, and a smooth checkout system.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
+      "Developed a WooCommerce website for premium carbon auto parts using WordPress, focusing on visual layout and functional customization.",
+    technologies: ["Wordpress", "Woocommerce"],
   },
   {
-    title: "Malika AI Landing Page",
-    year: "2024",
+    title: "Amanah Farm Website",
+    year: "2025",
+    link: "https://amanahfarm.com/",
+    displayLink: "amanahfarm.com",
     description:
-      "Created an AI landing page with WordPress, showcasing features and pricing within a tight deadline, focusing on SEO optimization.",
-    technologies: ["WordPress", "SEO"],
+      "Built a WooCommerce based website for a vegetable supplier using WordPress, with clean layout and organized product display.",
+    technologies: ["WordPress", "Woocommerce"],
   },
   {
-    title: "Shopia Mobile Application",
-    year: "2019",
+    title: "Ksatria Baja Hitam Website",
+    year: "2025",
+    link: "https://ksatria.co.id/",
+    displayLink: "ksatria.co.id",
     description:
-      "Built the front-end with Ionic, translating Figma designs into functional UI, ensuring client requirements were met.",
-    technologies: ["Ionic", "Figma"],
+      "Created a WordPress website for a service business with easy to read content and a layout that works well on all devices.",
+    technologies: ["WordPress"],
   },
   {
-    title: "UGM Website",
-    year: "2019",
+    title: "Karyatama Bangun Sawit Website",
+    year: "2025",
+    link: "https://karyatamasawit.com/",
+    displayLink: "karyatamasawit.com",
     description:
-      "Developed UGM's official website, converting PSD designs into responsive HTML layouts with consistency and UX in mind.",
-    technologies: ["HTML", "CSS", "PSD"],
+      "Built website for a palm oil industry company using WordPress and WooCommerce, with product showcase and clean layout.",
+    technologies: ["Wordpress", "Woocommerce"],
   },
   {
-    title: "Polygon Bikes Website",
-    year: "2018",
+    title: "Karyatama Komposit Website",
+    year: "2025",
+    link: "https://karyatamakomposit.com/",
+    displayLink: "karyatamakomposit.com",
     description:
-      "Built a responsive e-commerce website, focusing on product displays and user-friendly navigation.",
-    technologies: ["HTML", "CSS", "E-Commerce"],
+      "Created a WordPress and WooCommerce website for a carbon composite manufacturer, featuring clean product layout and responsive design.",
+    technologies: ["Wordpress", "Woocommerce"],
   },
   {
-    title: "The Voyager & Kensington Themes",
-    year: "2017",
+    title: "Little Qurani Website",
+    year: "2025",
+    link: "https://littlequrani.id/",
+    displayLink: "littlequrani.id",
     description:
-      "Created two HTML themes approved on ThemeForest, focusing on clean, structured code and versatility.",
-    technologies: ["HTML", "CSS", "ThemeForest"],
+      "Built a WordPress website for an online Qur'an learning course for kids, with clear class information and responsive layout.",
+    technologies: ["Wordpress"],
   },
 ];
 
@@ -70,12 +82,22 @@ export default function SectionProjects() {
             >
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
               <p className="text-sm mb-4">{project.year}</p>
-              <p className="text-sm mb-4">{project.description}</p>
+              <p className="text-sm mb-2">{project.description}</p>
+              {project.link && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block italic text-sm mb-4 text-sky-500 hover:text-sky-600 transition-colors"
+                >
+                  {project.displayLink}
+                </a>
+              )}
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech, i) => (
                   <span
                     key={i}
-                    className="bg-gray-200 text-xs px-1 py-1 rounded"
+                    className="bg-gray-200 text-xs px-2 py-1 rounded"
                   >
                     {tech}
                   </span>

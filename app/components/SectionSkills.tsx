@@ -7,7 +7,6 @@ import {
   FaCode,
 } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
-import Image from "next/image";
 
 const skills = [
   {
@@ -19,7 +18,7 @@ const skills = [
     title: "Woocommerce",
     caption: "E-Commerce Plugin Platform",
     icon: (
-      <Image
+      <img
         src="/images/woo-logo.svg"
         alt="WooCommerce Logo"
         className="w-6 h-6 object-contain"
