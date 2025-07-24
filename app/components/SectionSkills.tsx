@@ -6,7 +6,8 @@ import {
   FaSearch,
   FaCode,
 } from "react-icons/fa";
-import { SiTailwindcss, SiWoocommerce } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+import Image from "next/image";
 
 const skills = [
   {
@@ -17,7 +18,13 @@ const skills = [
   {
     title: "Woocommerce",
     caption: "E-Commerce Plugin Platform",
-    icon: <SiWoocommerce className="text-purple-600" />,
+    icon: (
+      <Image
+        src="/images/woo-logo.svg"
+        alt="WooCommerce Logo"
+        className="w-6 h-6 object-contain"
+      />
+    ),
   },
   {
     title: "React.js",
