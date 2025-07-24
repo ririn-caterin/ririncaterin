@@ -5,20 +5,19 @@ import {
   FaWordpress,
   FaSearch,
   FaCode,
-  FaLayerGroup,
 } from "react-icons/fa";
-import {
-  SiNextdotjs,
-  SiTailwindcss,
-  SiRedux,
-  SiTestinglibrary,
-} from "react-icons/si";
+import { SiTailwindcss, SiWoocommerce } from "react-icons/si";
 
 const skills = [
   {
-    title: "Next.js",
-    caption: "Modern web framework",
-    icon: <SiNextdotjs className="text-black" />,
+    title: "Wordpress",
+    caption: "Content Management System",
+    icon: <FaWordpress className="text-sky-700" />,
+  },
+  {
+    title: "Woocommerce",
+    caption: "E-Commerce Plugin Platform",
+    icon: <SiWoocommerce className="text-purple-600" />,
   },
   {
     title: "React.js",
@@ -36,19 +35,9 @@ const skills = [
     icon: <FaCode className="text-blue-500" />,
   },
   {
-    title: "Redux",
-    caption: "State management",
-    icon: <SiRedux className="text-purple-500" />,
-  },
-  {
     title: "Tailwind CSS",
     caption: "Utility-first CSS framework",
     icon: <SiTailwindcss className="text-teal-400" />,
-  },
-  {
-    title: "Material UI",
-    caption: "Pre-built UI components",
-    icon: <FaLayerGroup className="text-blue-400" />,
   },
   {
     title: "API Integration",
@@ -64,16 +53,6 @@ const skills = [
     title: "SEO Optimization",
     caption: "Improving search visibility",
     icon: <FaSearch className="text-green-500" />,
-  },
-  {
-    title: "Headless WordPress",
-    caption: "Content-driven development",
-    icon: <FaWordpress className="text-blue-600" />,
-  },
-  {
-    title: "Testing",
-    caption: "React Testing Library",
-    icon: <SiTestinglibrary className="text-red-500" />,
   },
 ];
 
