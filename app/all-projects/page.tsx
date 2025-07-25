@@ -21,12 +21,11 @@ const Page = () => {
           Portfolio of Completed Projects
         </h2>
         <p className="text-sm mb-4 md:text-base md:mb-10">
-          Welcome to my portfolio, where I showcase projects I have successfully
-          completed over the years. With a strong background in front-end
-          development, I have crafted responsive, user-friendly, and
-          high-performance websites and applications for diverse clients.
-          Explore the highlights of my work below, demonstrating my technical
-          expertise and the impactful contributions I’ve made.
+          Welcome to my portfolio, where I share some of the projects I've
+          worked on, mainly using WordPress and WooCommerce. With a background
+          in front-end development, I focus on building websites that are
+          functional, easy to manage, and suited to each project's needs across
+          different industries and use cases.
         </p>
         <AllProjects />
       </div>

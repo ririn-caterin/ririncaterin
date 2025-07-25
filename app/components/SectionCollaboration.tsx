@@ -8,8 +8,7 @@ const SectionColaboration = () => {
           Looking for a Front-End Developer? Let&apos;s talk!
         </h2>
         <p className="md:text-lg mb-10">
-          Transforming designs into functional, fast, and beautiful websites
-          with clean code.
+          Fast, functional, and scalable WordPress solutions.
         </p>
         <Link
           href="https://api.whatsapp.com/send?phone=6281393893163"

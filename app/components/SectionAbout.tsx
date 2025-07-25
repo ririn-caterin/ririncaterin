@@ -10,11 +10,11 @@ const SectionAbout = () => {
             Hi, I’m Ririn Caterin.
           </h1>
           <p className="text-sm md:text-base leading-6 md:leading-7 mb-6">
-            Front-End Developer with hands-on experience building and
-            customizing WordPress and WooCommerce websites. I focus on layout
-            styling, theme customization, and ensuring a smooth user experience
-            across devices. I enjoy solving front-end issues and making sure
-            everything looks clean and works as expected.
+            Front-End Developer with hands-on experience in building and
+            customizing WordPress and WooCommerce websites. Proven ability to
+            implement themes, integrate plugins, and ensure reliable
+            functionality across devices. Adept at identifying and resolving
+            front-end issues to maintain optimal site performance.
           </p>
         </div>
 

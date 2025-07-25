@@ -1,417 +1,428 @@
+import { desc } from "framer-motion/client";
+
 const ProjectTable = () => {
   const projects = [
     {
       year: "2025",
+      name: "Little Qurani Website",
+      description: "Developed the Little Qurani website using WordPress",
+      role: "WordPress Developer",
+    },
+    {
+      year: "2025",
       name: "MentorQu Website",
       description:
-        "Developed the MentorQu website using WordPress page builder.",
+        "Developed the MentorQu website using WordPress and WooCommerce",
       role: "Front-End Developer",
     },
     {
       year: "2025",
-      name: "Karyatana Komposit Website",
+      name: "Karyatama Komposit Website",
       description:
-        "Developed the Karyatama Komposit website using WordPress page builder.",
+        "Developed the Karyatama Komposit website using WordPress and WooCommerce",
       role: "Front-End Developer",
     },
     {
       year: "2025",
       name: "Amanah Farm Website",
       description:
-        "Developed the Amanah Farm website using WordPress page builder.",
+        "Developed the Amanah Farm website using WordPress and WooCommerce",
       role: "Front-End Developer",
     },
     {
       year: "2025",
       name: "Karyatama Bangun Sawit Website",
       description:
-        "Developed the Karyatama Bangun Sawit website using WordPress page builder.",
+        "Developed the Karyatama Bangun Sawit website using WordPress and WooCommerce",
       role: "Front-End Developer",
     },
     {
       year: "2025",
       name: "Ksatria Baja Hitam Website",
-      description:
-        "Developed the Ksatria Baja Hitam website using WordPress page builder.",
+      description: "Developed the Ksatria Baja Hitam website using WordPress",
       role: "Front-End Developer",
     },
     {
       year: "2025",
       name: "MCI Carbon Website",
       description:
-        "Developed the MCI Carbon website using WordPress page builder.",
+        "Developed the MCI Carbon website using WordPress and WooCommerce",
       role: "Front-End Developer",
     },
     {
       year: "2024",
       name: "Malika AI Website",
       role: "Front-End Developer",
-      description:
-        "Developed the malika.ai website using a WordPress page builder.",
+      description: "Developed the malika.ai website using WordPress",
     },
     {
       year: "2024",
       name: "Aksoro Website",
       role: "Front-End Developer",
       description:
-        "Update the appearance of Aksoro website according to the latest design",
+        "Updated the Aksoro website with a new design using WordPress",
     },
     {
       year: "2022",
       name: "Syarihub Website",
       role: "Front-End Developer",
-      description: "Update the appearance of Syarihub website",
+      description:
+        "Updated the Syarihub website with a new design using WordPress",
     },
     {
       year: "2020",
       name: "Berakal Website",
       role: "Front-End Developer",
-      description: "Slice Figma design to HTML for website Berakal",
+      description: "Sliced Figma design to HTML for website Berakal",
     },
     {
       year: "2019",
       name: "Shopia Mobile Application",
       role: "Front-End Developer",
       description:
-        "Slice Figma design to HTML for mobile apps Shopia (Beauty Clinic)",
+        "Sliced Figma design to HTML for mobile apps Shopia (Beauty Clinic)",
     },
     {
       year: "2019",
       name: "Hipwee Website",
       role: "Front-End Developer",
-      description: "Slice PSD to HTML for website Hipwee",
+      description:
+        "Built HTML pages for Hipwee, later implemented as a WordPress theme",
     },
     {
       year: "2019",
       name: "UGM Website",
       role: "Front-End Developer",
       description:
-        "Slice PSD to HTML for company profile Gajah Mada University",
+        "Built HTML pages for UGM, later implemented as a WordPress theme",
     },
     {
       year: "2019",
       name: "Adaro Web Information System",
       role: "Front-End Developer",
-      description: "Slice XD to HTML for Adaro web information system",
+      description: "Sliced XD to HTML for Adaro web information system",
     },
     {
       year: "2019",
       name: "Luwansa Website",
       role: "Front-End Developer",
       description:
-        "Slice PSD to HTML for company profile Luwansa Hotel and Convention Center",
+        "Built HTML pages for company profile Luwansa Hotel and Convention Center, later implemented as a WordPress theme",
     },
     {
       year: "2019",
       name: "Sandlik Website",
       role: "Front-End Developer",
       description:
-        "Slice PSD to HTML for company profile Sandlik Constructions",
+        "Built HTML pages for company profile Sandlik Constructions, later implemented as a WordPress theme",
     },
     {
       year: "2019",
       name: "Toyu Website",
       role: "Front-End Developer",
-      description: "Slice XD to HTML for e-commerce website Toyu",
+      description:
+        "Built HTML pages for Toyu e-commerce website, later implemented as WordPress theme",
     },
     {
       year: "2019",
       name: "Amily Hijab Website",
       role: "Front-End Developer",
-      description: "Slice PSD to HTML for e-commerce website Amily Hijab",
+      description:
+        "Built HTML pages for Amily Hijab e-commerce website, later implemented as WordPress theme",
     },
     {
       year: "2018",
       name: "ASEAN Energy Website",
       role: "Front-End Developer",
-      description: "Slice PSD to HTML for company profile ASEAN Energy",
+      description:
+        "Built HTML pages for ASEAN Energy, later implemented as a WordPress theme",
     },
     {
       year: "2018",
       name: "Ayo Haji Website",
       role: "Front-End Developer",
-      description: "Customize website appearance Ayo Haji based on mockup",
+      description: "Developed the Ayo Haji website using WordPress",
     },
     {
       year: "2018",
       name: "DPP UGM Website",
       role: "Front-End Developer",
       description:
-        "Slice PSD to HTML for company profile DPP Gajah Mada University",
+        "Built HTML pages for company profile DPP Gajah Mada University, later implemented as a WordPress theme",
     },
     {
       year: "2018",
       name: "JHU Hipwee Website",
       role: "Front-End Developer",
       description:
-        "Slice PSD to HTML for microsite John Hopkins University x Hipwee",
+        "Built HTML pages for microsite John Hopkins University x Hipwee, later implemented as a WordPress theme",
     },
     {
       year: "2018",
       name: "Masjid Gedhe Website",
       role: "Front-End Developer",
       description:
-        "Customize User Interface website Gedhe Mosque Yogyakarta based on mockup",
+        "Developed the Gedhe Mosque Yogyakarta website using WordPress",
     },
     {
       year: "2018",
       name: "Mr DIY Website",
       role: "Front-End Developer",
-      description: "Build a single page for Mr DIY event",
+      description: "Built a single page for Mr DIY event",
     },
     {
       year: "2018",
       name: "Pustaka Tonjoo Website",
       role: "Front-End Developer",
-      description: "Slice PSD to HTML for product knowledge in Tonjoo",
+      description: "Sliced PSD to HTML for product knowledge in Tonjoo",
     },
     {
       year: "2018",
       name: "Erge Store Website",
       role: "Front-End Developer",
-      description: "Slice PSD to HTML for e-commerce website Erge Store",
+      description:
+        "Built HTML pages for Erge Store e-commerce website, later implemented as WordPress theme",
     },
     {
       year: "2018",
       name: "Samara Lombok Website",
       role: "Front-End Developer",
       description:
-        "Customize website appearance for company Profile Samara Lombok based on mockup",
+        "Built HTML pages for company Profile Samara Lombok website, later implemented as WordPress theme",
     },
     {
       year: "2018",
       name: "Gamifikasi Hipwee",
       role: "Front-End Developer",
-      description: "Slice PSD to HTML for one of Hipwee features",
+      description: "Sliced PSD to HTML for one of Hipwee features",
     },
     {
       year: "2018",
       name: "Website GNP Project",
       role: "Front-End Developer",
-      description: "Customize website appearance GNP Project based on mockup",
+      description:
+        "Built HTML pages for GNP Project website, later implemented as WordPress theme",
     },
     {
       year: "2018",
       name: "Cari Teman Makan Website",
       role: "Front-End Developer",
       description:
-        "Customize website appearance for company profile Bintang Ridler x Hipwee based on mockup",
+        "Customized website appearance for company profile Bintang Ridler x Hipwee based on mockup",
     },
     {
       year: "2018",
       name: "Polygon Website",
       role: "Front-End Developer",
-      description: "Slice PSD to HTML for e-commerce website Polygon Bikes",
+      description:
+        "Built HTML pages for Polygon Bikes e-commerce website, later implemented as WordPress theme",
     },
     {
       year: "2017",
       name: "Kensington Wordpress Theme",
       role: "Front-End Developer",
       description:
-        "Build wordpress theme Kensington HTML version for Themeforest",
+        "Built WordPress Theme Kensington HTML version for ThemeForest",
     },
     {
       year: "2017",
       name: "The Voyager HTML Theme",
       role: "Front-End Developer",
-      description: "Build HTML theme The Voyager for Themeforest",
+      description:
+        "Built HTML Theme The Voyager for ThemeForest, later implemented as WordPress theme",
     },
     {
       year: "2017",
       name: "Balkondes Website",
       role: "Front-End Developer",
-      description: "Slice PSD to HTML for company profile Balkondes Borobudur",
+      description:
+        "Built HTML pages for company profile Balkondes Borobudur website, later implemented as WordPress theme",
     },
     {
       year: "2017",
       name: "Dari Penjuru Website",
       role: "Front-End Developer",
-      description: "Slice PSD to HTML for company profile DariPenjuru",
+      description:
+        "Built HTML pages for DariPenjuru website, later implemented as WordPress theme",
     },
     {
       year: "2017",
       name: "Ayo Indonesia Website",
       role: "Front-End Developer",
       description:
-        "Slice PSD to HTML for sport community website Ayo Indonesia",
+        "Sliced PSD to HTML for sport community website Ayo Indonesia",
     },
     {
       year: "2017",
       name: "Anak Baru Website",
-      role: "Wordpress Developer",
+      role: "WordPress Developer",
       description:
-        "Build a local guide website that will help newcomers to find places on Melbourne and Sydney",
-    },
-    {
-      year: "2017",
-      name: "The Real Ummi Website",
-      role: "Wordpress Developer",
-      description:
-        "Build and maintain mom's lifestyle website using Wordpress.",
+        "Built a local guide website using WordPress that will help newcomers to find places on Melbourne and Sydney",
     },
     {
       year: "2016",
       name: "LDN ERNST Website",
-      role: "Wordpress Developer",
+      role: "WordPress Developer",
       description:
-        "Build website for a lawyer company and create the user's manual.",
+        "Built a website using WordPress for a lawyer company and created the user manual",
     },
     {
       year: "2016",
       name: "Beamer Multimedia Website",
-      role: "Wordpress Developer",
+      role: "WordPress Developer",
       description:
-        "Build website for a multimedia service company and create the user's manual.",
+        "Built a website using WordPress for a multimedia service company and created the user manual",
     },
     {
       year: "2016",
       name: "Dinas Pendidikan Kabupaten Barru Website",
-      role: "Wordpress Developer",
+      role: "WordPress Developer",
       description:
-        "Build website Education Departement of Barru District and create the user's manual.",
+        "Built a website using WordPress for Education Departement of Barru District and created the user manual",
     },
     {
       year: "2016",
       name: "ULP UNDIP Web Application",
       role: "Front-end Developer",
       description:
-        "Create HTML pages for Auction management application for ULP Diponegoro University",
+        "Created HTML pages for Auction management application for ULP Diponegoro University",
     },
     {
       year: "2016",
       name: "ALSTE Web Application",
       role: "Front-end Developer",
       description:
-        "Create HTML pages for Information System for High School Graduation 3 Semarang City.",
+        "Created HTML pages for Information System for High School Graduation 3 Semarang City",
     },
     {
       year: "2016",
       name: "RSUD Kabupaten Barru Website",
-      role: "Wordpress Developer",
+      role: "WordPress Developer",
       description:
-        "Build website Hospital of Barru District and create the user's manual.",
+        "Built website using WordPress for Hospital of Barru District and created the user manual",
     },
     {
       year: "2016",
       name: "SMKN 1 Bawen Website",
-      role: "Wordpress Developer",
+      role: "WordPress Developer",
       description:
-        "Build website State Vocation High School 1 Bawen and create the user's manual.",
+        "Built a website using WordPress for State Vocational High School 1 Bawen and created the user manual.",
     },
     {
       year: "2016",
       name: "PPID Kab. Barru Website",
-      role: "Wordpress Developer",
+      role: "WordPress Developer",
       description:
-        "Build local government profile and create the user's manual.",
+        "Built a profile website for a local government using WordPress and created the user manual",
     },
     {
       year: "2016",
       name: "KARWAS UNDIP Web Application",
       role: "Front-end Developer",
-      description: "Create HTML pages for KARWAS Diponegoro University",
+      description: "Created HTML pages for KARWAS Diponegoro University",
     },
     {
       year: "2016",
       name: "KPE BKD Semarang Web Application",
       role: "Front-end Developer",
       description:
-        "Create HTML pages for Employee card management information system electronic for BKD Semarang City.",
+        "Created HTML pages for Employee card management information system electronic for BKD Semarang City",
     },
     {
       year: "2016",
       name: "SIMASTER Web Application",
       role: "Front-end Developer",
-      description: "Create HTML pages for Web Application Simaster",
+      description: "Created HTML pages for Web Application Simaster",
     },
     {
       year: "2016",
-      name: "JAPSI UNDIP Websitte",
-      role: "Wordpress Developer",
+      name: "JAPSI UNDIP Website",
+      role: "WordPress Developer",
       description:
-        "Build website JAPSI at the University of Diponegoro. and create the user's manual",
+        "Built the JAPSI website at Diponegoro University using WordPress and created the user manual",
     },
     {
       year: "2016",
       name: "Psikologi UNDIP Website",
-      role: "Wordpress Developer",
+      role: "WordPress Developer",
       description:
-        "Build website Faculty of Psychology at the University of Diponegoro. and create the user's manual",
+        "Built website Faculty of Psychology at the University of Diponegoro using WordPress, and created the user manual",
     },
     {
       year: "2016",
       name: "Web Application of Survey Balai Monitoring",
       role: "Front-end Developer",
       description:
-        "Create HTML pages for Web Application of Survey Balai Monitoring in Semarang City",
+        "Created HTML pages for Web Application of Survey Balai Monitoring in Semarang City",
     },
     {
       year: "2016",
       name: "CV. Bintang Sentosa Sejahtera Website",
       role: "WordPress Developer",
       description:
-        "Build company profile website for a commercial and service company, and create the user's manual.",
+        "Built company profile website for a commercial and service company using WordPress, and created the user manual",
     },
     {
       year: "2016",
       name: "Balubaid Ikhwan Website",
       role: "WordPress Developer",
       description:
-        "Build company profile website for a company that organize The Hajj and Umrah pilgrimage, and create the user's manual.",
+        "Built company profile website for a company that organize The Hajj and Umrah pilgrimage using WordPress, and created the user manual",
     },
     {
       year: "2016",
       name: "AbsenKU Website",
       role: "Front-end Developer",
       description:
-        "Build one page web application of information system for tracking employee attendance",
+        "Built one page web application of information system for tracking employee attendance",
     },
     {
       year: "2016",
       name: "Borobudur Marathon - International Running Event Website",
       role: "WordPress Developer",
       description:
-        "Build a website for International running event and create the registration system page",
+        "Built a website for International running event using WordPress",
     },
     {
       year: "2016",
       name: "AbsenKU Karyawan Web Application",
       role: "Front-end Developer",
-      description: "Create HTML pages for web application AbsenKU Karyawan",
+      description: "Created HTML pages for web application AbsenKU Karyawan",
     },
     {
       year: "2015",
       name: "Web Application of FH UNDIP '96",
       role: "Front-end Developer",
       description:
-        "Create HTML pages for web application of Diponegoro University Graduation for Law Faculty",
+        "Created HTML pages for web application of Diponegoro University Graduation for Law Faculty",
     },
     {
       year: "2015",
       name: "Karya Zirang Website",
       role: "WordPress Developer",
       description:
-        "Build company profile website for Zirang Business Group and create the user's manual.",
+        "Built company profile website for Zirang Business Group using WordPress and created the user manual",
     },
     {
       year: "2015",
       name: "GINSI Jateng Website",
       role: "WordPress Developer",
       description:
-        "Build company profile website for an importer company and create the user's manual.",
+        "Built company profile website for an importer company using WordPress and created the user manual",
     },
     {
       year: "2015",
       name: "Borobudur10K - International Running Event Website",
       role: "WordPress Developer",
-      description: "Build a website for International running event",
+      description:
+        "Built a website for International running event using WordPress",
     },
     {
       year: "2015",
       name: "BPR Weleri Makmur Website",
       role: "WordPress Developer",
       description:
-        "Build company profile website for a bank and create the user's manual.",
+        "Built company profile website for a Bank using WordPress and created the user manual",
     },
   ] as const;
 
