@@ -26,7 +26,7 @@ const skills = [
     ),
   },
   {
-    title: "React.js",
+    title: "React JS",
     caption: "UI component development",
     icon: <FaReact className="text-blue-400" />,
   },
