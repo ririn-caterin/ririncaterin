@@ -21,11 +21,11 @@ const Page = () => {
           Portfolio of Completed Projects
         </h2>
         <p className="text-sm mb-4 md:text-base md:mb-10">
-          Welcome to my portfolio, where I share some of the projects I've
+          Welcome to my portfolio, where I share some of the projects I&apos;ve
           worked on, mainly using WordPress and WooCommerce. With a background
           in front-end development, I focus on building websites that are
-          functional, easy to manage, and suited to each project's needs across
-          different industries and use cases.
+          functional, easy to manage, and suited to each project&apos;s needs
+          across different industries and use cases.
         </p>
         <AllProjects />
       </div>
